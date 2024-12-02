@@ -76,3 +76,14 @@ PS D:\R\for_test2> yarn add concurrently --dev
 ➤ YN0000: └ Completed in 6s 521ms
 ➤ YN0000: · Done in 7s 544ms
 PS D:\R\for_test2> 
+
+## =====================
+copying, f + f
+
+----
+
+https://favicon.io/favicon-generator/
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">

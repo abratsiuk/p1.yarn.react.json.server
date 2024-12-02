@@ -1,5 +1,5 @@
 {
-  "name": "for_test2",
+  "name": "p1.yarn.react.json.server",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,14 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "json-server-run": "json-server --watch server/db.json5 --port 3001",
+    "start": "concurrently \"yarn json-server-run\" \"yarn dev\""
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
     "materialize-css": "1.0.0-rc.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "5",
+    "react-router-dom": "^5.3.4",
     "stylelint": "^16.11.0"
   },
   "devDependencies": {
