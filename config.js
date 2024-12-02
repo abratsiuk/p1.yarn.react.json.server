@@ -1,5 +1,3 @@
-const API_KEY = '8680c009';
-
-const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
+const API_URL = `http://localhost:3001`;
 
 export { API_URL };
