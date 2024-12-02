@@ -1,4 +1,4 @@
-import { API_URL, ImagesNumber, ImagesPath } from '../../config';
+import { API_URL } from '../../config';
 import { imitateImg } from './imitateImg';
 
 const getHotels = async (search) => {
