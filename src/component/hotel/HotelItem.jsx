@@ -1,4 +1,4 @@
-import { HotelFeatures } from './HotelFeatures';
+import { HotelFeatures } from './features/HotelFeatures';
 import { HotelStars } from './HotelStars';
 import './hotel-item.css';
 
