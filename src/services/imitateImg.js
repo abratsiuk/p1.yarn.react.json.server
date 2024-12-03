@@ -3,7 +3,6 @@ const ImagesPath = '/server/img';
 
 const imitateImg = (hotels) => {
     const updatedHotels = hotels.map((hotel) => {
-        const imgCount = hotel.images.length;
         hotel.images = hotel.images.map((img) => {
             img = getNextRandomImg();
             return img;

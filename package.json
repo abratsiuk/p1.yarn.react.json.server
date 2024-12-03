@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "json-server-run": "json-server --watch server/db.json5 --port 3001",
+    "json-server-run": "json-server --watch server/hotels.json5 --port 3001",
     "start": "concurrently \"yarn json-server-run\" \"yarn dev\""
   },
   "dependencies": {

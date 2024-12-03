@@ -1,4 +1,4 @@
-import { HotelItem } from './HotelItem';
+import { HotelItem } from './item/HotelItem';
 
 function Hotels(props) {
     const { hotels } = props;
