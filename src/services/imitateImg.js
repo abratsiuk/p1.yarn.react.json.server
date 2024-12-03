@@ -1,5 +1,5 @@
 const ImagesNumber = 56;
-const ImagesPath = '/server/img';
+const ImagesPath = '/src/assets/images/hotels';
 
 const imitateImg = (hotels) => {
     const updatedHotels = hotels.map((hotel) => {
