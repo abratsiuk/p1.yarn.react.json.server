@@ -1,4 +1,4 @@
-import { featureIcon } from './featureIcon,js';
+import { featureIcon } from './feature-icon.js';
 
 function HotelFeatures(props) {
     const { features = [] } = props;

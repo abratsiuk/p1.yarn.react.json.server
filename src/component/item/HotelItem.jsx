@@ -1,6 +1,6 @@
 import { HotelFeatures } from './HotelFeatures';
 import { HotelStars } from './HotelStars';
-import './hotelItem.css';
+import './hotel-item.css';
 
 function HotelItem(props) {
     const { hotel: h } = props;
