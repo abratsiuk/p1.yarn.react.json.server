@@ -1,7 +1,11 @@
-.p1-debug-value {
-    border: 3px dotted rgba(59, 120, 189, 0.5);
-    margin: 5px;
+.p1-debug {
+    margin: 10px;
     box-shadow: 2px 2px 5px 0px rgba(59, 120, 189, 0.5);
+    border: 3px dotted rgba(59, 120, 189, 0.5);
+}
+
+.p1-debug-value {
+    border: 1px dotted rgba(59, 120, 189, 0.5);
 }
 
 .p1-debug-value-key {

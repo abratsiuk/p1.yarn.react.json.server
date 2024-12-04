@@ -2,7 +2,7 @@ import './debug-value.css';
 
 function DebugValue(props) {
     return (
-        <>
+        <div className='p1-debug'>
             {Object.entries(props).map(([key, value]) => (
                 <div
                     className='p1-debug-value'
@@ -14,7 +14,7 @@ function DebugValue(props) {
                     </span>
                 </div>
             ))}
-        </>
+        </div>
     );
 }
 

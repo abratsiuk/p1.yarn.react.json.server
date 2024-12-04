@@ -28,6 +28,8 @@ function Main() {
     return (
         <>
             <Search reloadHotels={reloadHotels} />
+            <img src='/src/component/hotel/docs/hotel-card-example.jpg' />
+
             {loading ? <Preloader /> : <Hotels hotels={hotels} />}
         </>
     );
