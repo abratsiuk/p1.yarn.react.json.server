@@ -17,3 +17,16 @@
 .p1-debug-value-value {
     color: #000000;
 }
+
+.p1-debug-wrap {
+    min-height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.p1-debug-wrap legend {
+    font-weight: bold;
+    color: red;
+    padding: 0 10px;
+}
