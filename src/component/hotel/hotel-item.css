@@ -18,3 +18,9 @@
 .p1-icon-feature {
     vertical-align: middle;
 }
+
+.p1-item-refundable,
+.p1-item-payment-type-item {
+    color: #227950;
+    font-size: 1.2rem;
+}

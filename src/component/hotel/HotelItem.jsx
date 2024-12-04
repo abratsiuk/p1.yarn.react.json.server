@@ -4,45 +4,38 @@ import './hotel-item.css';
 import { DebugValue } from '../utils/DebugValue';
 import { DebugWrap } from '../utils/DebugWrap';
 import { Images } from '../images/Images';
+import { HotelLocation } from './HotelLocation';
+import { HotelRefundable } from './HotelRefundable';
+import { HotelPaymentType } from './HotelPaymentType';
+import { HotelRating } from './HotelRating';
+import { HotelPrice } from './HotelPrice';
 
 function HotelItem(props) {
     const { hotel: h } = props;
     return (
         <div className='p1-item'>
-            <DebugWrap name='Image'>
-                <Images images={h.images} />
-            </DebugWrap>
+            <Images images={h.images} />
 
             <div>
-                <DebugWrap name='name'>
-                    <div className='p1-item-name'>{h.name}</div>
-                </DebugWrap>
-                <DebugWrap name='HotelStars'>
-                    <HotelStars stars={h.stars} />
-                </DebugWrap>
-                <DebugWrap name='location'>
-                    <div className='p1-item-location'>{h.location}</div>
-                </DebugWrap>
-                <DebugWrap name='HotelFeatures'>
-                    <HotelFeatures features={h.features} />
-                </DebugWrap>
+                <div className='p1-item-name'>{h.name}</div>
 
-                <DebugWrap name='HotelFeatures'>
-                    <DebugValue cancellation={h.refundable} />
-                </DebugWrap>
-                <DebugWrap name='HotelPaymentType'>
-                    <DebugValue paymentType={h.paymentType} />
-                </DebugWrap>
-                <DebugWrap name='HotelRating'>
-                    <DebugValue rating={h.rating} />
-                </DebugWrap>
-                <DebugWrap name='HotelPrice'>
-                    <DebugValue
-                        discount={h.discount}
-                        price={h.price}
-                        currency={h.currency}
-                    />
-                </DebugWrap>
+                <HotelStars stars={h.stars} />
+                <HotelLocation location={h.location} />
+                <HotelFeatures features={h.features} />
+
+                <HotelRefundable refundable={h.refundable} />
+                <HotelPaymentType paymentType={h.paymentType} />
+
+                <HotelRating
+                    score={h.rating.score}
+                    type={h.rating.type}
+                    reviews={h.rating.reviews}
+                />
+                <HotelPrice
+                    discount={h.discount}
+                    price={h.price}
+                    currency={h.currency}
+                />
             </div>
         </div>
     );

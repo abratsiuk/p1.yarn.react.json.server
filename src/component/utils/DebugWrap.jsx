@@ -1,6 +1,6 @@
 import './debug-value.css';
 
-function DebugWrap({ children, name, isHidden = false }) {
+function DebugWrap({ children, name }) {
     return (
         <fieldset className='p1-debug-wrap'>
             <legend>{name}</legend>
@@ -9,4 +9,8 @@ function DebugWrap({ children, name, isHidden = false }) {
     );
 }
 
-export { DebugWrap };
+function DebugWrapHide({ children }) {
+    return { children };
+}
+
+export { DebugWrap, DebugWrapHide };
