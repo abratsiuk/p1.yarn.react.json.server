@@ -27,11 +27,7 @@ function HotelItem(props) {
                 <HotelPaymentType paymentType={h.paymentType} />
 
                 <HotelRating
-                    score={
-                        Number.isInteger(h.rating.score)
-                            ? `${h.rating.score}.0`
-                            : h.rating.score
-                    }
+                    score={h.rating.score}
                     type={h.rating.type}
                     reviews={h.rating.reviews}
                 />
