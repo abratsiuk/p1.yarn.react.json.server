@@ -1,0 +1,32 @@
+.p1-image {
+    position: relative;
+    display: flex;
+    orientation: row;
+}
+
+.p1-image-button {
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.p1-image-arrow {
+    font-size: 40px;
+    color: #fff;
+}
+
+.p1-image-left,
+.p1-image-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.p1-image-left {
+    left: 20px;
+}
+
+.p1-image-right {
+    right: 20px;
+}
