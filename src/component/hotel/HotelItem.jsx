@@ -3,16 +3,14 @@ import { HotelStars } from './stars/HotelStars';
 import './hotel-item.css';
 import { DebugValue } from '../utils/DebugValue';
 import { DebugWrap } from '../utils/DebugWrap';
+import { HotelImages } from './image/HotelImages';
 
 function HotelItem(props) {
     const { hotel: h } = props;
     return (
         <div className='p1-item'>
             <DebugWrap name='HotelImage'>
-                <div>
-                    <img src={h.images[0]} />
-                </div>
-                <DebugValue images={h.images} />
+                <HotelImages images={h.images} />
             </DebugWrap>
 
             <div>
