@@ -1,0 +1,20 @@
+.p1-rating {
+    display: flex;
+    orientation: row;
+}
+
+.p1-rating-scope {
+    min-width: 3rem;
+    min-height: 2rem;
+    background-color: #227950;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.p1-rating-scope-value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
