@@ -1,6 +1,7 @@
 import { HotelFeatures } from './features/HotelFeatures';
-import { HotelStars } from './HotelStars';
+import { HotelStars } from './stars/HotelStars';
 import './hotel-item.css';
+import { DebugValue } from '../utils/DebugValue';
 
 function HotelItem(props) {
     const { hotel: h } = props;
@@ -14,6 +15,7 @@ function HotelItem(props) {
                 <HotelStars stars={h.stars} />
                 <div className='p1-item-location'>{h.location}</div>
                 <HotelFeatures features={h.features} />
+                <DebugValue rating={h.rating} />
             </div>
         </div>
     );
