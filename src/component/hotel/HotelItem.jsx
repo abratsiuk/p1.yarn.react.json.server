@@ -14,9 +14,12 @@ function HotelItem(props) {
     const { hotel: h } = props;
     return (
         <div className='p1-item'>
-            <Images images={h.images} />
+            <Images
+                className='p1-item-left'
+                images={h.images}
+            />
 
-            <div>
+            <div className='p1-item-right'>
                 <div className='p1-item-name'>{h.name}</div>
 
                 <HotelStars stars={h.stars} />

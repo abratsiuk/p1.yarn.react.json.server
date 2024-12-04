@@ -1,7 +1,6 @@
 .p1-image {
     position: relative;
-    display: flex;
-    orientation: row;
+    display: inline-block;
 }
 
 .p1-image-button {

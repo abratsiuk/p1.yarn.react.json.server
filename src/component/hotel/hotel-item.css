@@ -24,3 +24,16 @@
     color: #227950;
     font-size: 1.2rem;
 }
+
+/* use float */
+.p1-item {
+    position: relative
+}
+
+.p1-item-left {
+    float: right
+}
+
+.p1-item-right {
+    float: right
+}
